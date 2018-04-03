@@ -1,0 +1,9 @@
+.app__inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app__logo{
+  margin-bottom: 2em;
+}

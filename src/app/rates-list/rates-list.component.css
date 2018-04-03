@@ -1,0 +1,45 @@
+.rates-list__inner{
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+}
+
+
+.rates-element__inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 6px;
+  padding: 0.5em;
+  text-align: start;
+}
+
+.rates-element__inner:hover{
+  background: #f3f6fb;
+  cursor: pointer;
+}
+.rates-element--positive{
+  color: #469c47;
+}
+.rates-element--negative{
+  color: #fe4345;
+}
+
+.rates-element__num{
+  flex-basis: 10%;
+  color: #6a8098;
+}
+
+.rates-element__symbol{
+  flex-basis: 40%;
+  color: #6a8098;
+}
+.rates-element__change{
+  flex-basis: 30%;
+}
+.rates-element__price{
+  flex-basis: 30%;
+  text-align: end;
+}

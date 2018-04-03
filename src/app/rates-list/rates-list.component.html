@@ -1,0 +1,18 @@
+<div class="rates-list rates-list__inner">
+  <div class="rates-element rates-element__inner" *ngFor="let rate of rates; index as index">
+    <div class="rates-element__num">{{index + 1}}</div>
+    <div class="rates-element__symbol">
+      <img height="20" width="20" src="{{getUrl(rate.symbol)}}">
+      {{getName(rate.symbol)}}
+    </div>
+    <div class="rates-element__change"
+         [ngClass]="{'rates-element--positive':rate.change>0,'rates-element--negative':rate.change<0}">
+      <span *ngIf="rate.change>0">↑</span>
+      <span *ngIf="rate.change<0">↓</span>
+      {{rate.change | number:'0.2-2'}}
+      %
+    </div>
+    <div class="rates-element__price">{{rate.price | number}}</div>
+  </div>
+
+</div>
